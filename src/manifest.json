@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Watch Later in notifications",
+	"version": "1.2",
+	"description": "An extension that adds the 'Add to Watch Later' button to the videos in the notification tray. ",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "hello"
+		}
+	},
+	"icons": {
+		"48": "assets/icon.jpeg"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://youtube.com/*"],
+			"js": ["js/content.js"]
+		}
+	]
+}
